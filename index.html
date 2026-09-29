@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Year 8 Python Practical | Selection Challenge</title>
+<style>
+:root{--bg:#f4f7fb;--card:#fff;--ink:#182230;--muted:#5c6b7a;--accent:#3157d5;--ok:#eaf7ef;--warn:#fff5dc;--code:#17202b}
+*{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+header{background:linear-gradient(120deg,#182230,#3157d5);color:white;padding:46px 20px}
+.wrap{max-width:980px;margin:auto}.eyebrow{font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem;opacity:.85}
+h1{font-size:clamp(2rem,5vw,3.5rem);margin:.25rem 0}.subtitle{max-width:700px;font-size:1.1rem}
+nav{position:sticky;top:0;background:white;border-bottom:1px solid #dfe5ec;z-index:2}.navinner{max-width:980px;margin:auto;padding:10px 20px;display:flex;gap:8px;overflow:auto}
+nav a{white-space:nowrap;text-decoration:none;color:#243447;background:#eef2f7;padding:7px 12px;border-radius:999px;font-size:.9rem}
+main{max-width:980px;margin:26px auto;padding:0 20px}.card{background:var(--card);border:1px solid #dfe5ec;border-radius:16px;padding:24px;margin:18px 0;box-shadow:0 4px 16px rgba(30,45,70,.05)}
+.level{display:inline-block;padding:5px 10px;border-radius:999px;background:#e9efff;color:#2346ae;font-weight:700;font-size:.8rem}
+h2{margin:.4rem 0 1rem} h3{margin-top:1.4rem} code,pre,textarea{font-family:Consolas,monospace}
+pre{background:var(--code);color:#f5f7fa;padding:16px;border-radius:10px;overflow:auto}
+textarea{width:100%;min-height:150px;border:1px solid #bcc8d5;border-radius:10px;padding:12px;font-size:.95rem}
+button,.button{border:0;border-radius:9px;padding:10px 14px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block;margin:4px 4px 4px 0}
+.primary{background:var(--accent);color:white}.secondary{background:#e9eef5;color:#243447}.hint{display:none;background:var(--warn);padding:12px;border-radius:9px;margin-top:8px}
+.feedback{margin-top:8px;font-weight:700}.checklist label{display:block;margin:7px 0}.test{background:#f1f5f9;padding:12px;border-radius:9px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}@media(max-width:700px){.two{grid-template-columns:1fr}}
+.exit{background:#eef7ff}.footer{text-align:center;color:var(--muted);padding:30px}
+input[type=text],input[type=number]{padding:9px;border:1px solid #b9c5d1;border-radius:8px;max-width:260px}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<div class="eyebrow">Year 8 • Introduction to Python</div>
+<h1>🐍 Selection Challenge</h1>
+<p class="subtitle">Practise integers, strings/characters, comparison operators and <strong>if / elif / else</strong> by building small programs that solve real problems.</p>
+</div></header>
+<nav><div class="navinner">
+<a href="#warmup">Warm-up</a><a href="#c1">1 Fix It</a><a href="#c2">2 Canteen</a><a href="#c3">3 Password</a><a href="#c4">4 Game</a><a href="#c5">5 Results</a><a href="#c6">6 Secret Door</a><a href="#exit">Exit Ticket</a>
+</div></nav>
+<main>
+<section class="card" id="warmup">
+<span class="level">START HERE</span><h2>🎯 Today's mission</h2>
+<p>By the end, you should be able to choose the correct data type, write a condition using a comparison operator, and use selection to make a program decide what to do.</p>
+<div class="two"><div class="test"><strong>Remember</strong><br><code>int()</code> → whole numbers<br><code>input()</code> → text/string</div>
+<div class="test"><strong>Useful operators</strong><br><code>== != &gt; &lt; &gt;= &lt;=</code></div></div>
+<p><a class="button primary" target="_blank" href="https://www.programiz.com/python-programming/online-compiler/">▶ Open Python Online Compiler</a></p>
+</section>
+
+<section class="card" id="c1"><span class="level">CHALLENGE 1 • DEBUG</span><h2>🔧 Fix the Code</h2>
+<p>This program should ask for an age and decide whether the student can join. Find and correct <strong>3 problems</strong>.</p>
+<pre>age = input("Enter your age: ")
+
+if age &gt;= 12
+print("You can join!")
+else
+print("You are too young.")</pre>
+<textarea placeholder="Type your corrected Python code here..."></textarea>
+<p><button class="secondary" onclick="toggle('h1')">💡 Hint</button></p>
+<div class="hint" id="h1">Think about <strong>data type</strong>, the <strong>colon :</strong>, and <strong>indentation</strong>.</div>
+<div class="checklist"><strong>Test it:</strong><label><input type="checkbox"> age = 10</label><label><input type="checkbox"> age = 12</label><label><input type="checkbox"> age = 15</label></div>
+</section>
+
+<section class="card" id="c2"><span class="level">CHALLENGE 2 • INTEGER</span><h2>🍎 School Canteen</h2>
+<p>Ask how much money a student has. If they have <strong>RM10 or more</strong>, print <code>You can buy lunch</code>. Otherwise print <code>You need more money</code>.</p>
+<pre>money = int(input("How much money do you have? RM"))
+
+# Write your selection below</pre>
+<textarea placeholder="Continue the program..."></textarea>
+<button class="secondary" onclick="toggle('h2')">💡 Hint</button><div class="hint" id="h2">Your condition starts with: <code>if money &gt;= 10:</code></div>
+<p class="test"><strong>Test values:</strong> 5, 10, 20. Predict the output before you run each test.</p>
+</section>
+
+<section class="card" id="c3"><span class="level">CHALLENGE 3 • STRING</span><h2>🔐 Password Checker</h2>
+<p>Ask for a password. If it is exactly <code>python8</code>, display <code>Access granted</code>. Otherwise display <code>Access denied</code>.</p>
+<pre>password = input("Enter password: ")
+
+# Continue the program</pre>
+<textarea placeholder="Write your selection..."></textarea>
+<button class="secondary" onclick="toggle('h3')">💡 Hint</button><div class="hint" id="h3">Strings need quotation marks. To check whether two values are equal, use <code>==</code>, not <code>=</code>.</div>
+</section>
+
+<section class="card" id="c4"><span class="level">CHALLENGE 4 • ELIF</span><h2>🎮 Game Character Lives</h2>
+<p>Ask for the player's number of lives and display the correct message.</p>
+<div class="test"><strong>5 or more</strong> → You are doing well!<br><strong>2–4</strong> → Be careful!<br><strong>1</strong> → Last life!<br><strong>0</strong> → Game Over!</div>
+<textarea placeholder="Write the complete program. Use if, elif and else..."></textarea>
+<button class="secondary" onclick="toggle('h4')">💡 Hint</button><div class="hint" id="h4">Start by checking the largest range: <code>if lives &gt;= 5:</code>. Then work down through the possibilities.</div>
+<p class="test"><strong>Test:</strong> 5, 3, 1 and 0.</p>
+</section>
+
+<section class="card" id="c5"><span class="level">CHALLENGE 5 • MULTIPLE DECISIONS</span><h2>📊 Student Result Checker</h2>
+<p>Build a program that reads an integer mark.</p>
+<div class="test">80+ → <strong>Excellent</strong><br>60–79 → <strong>Good</strong><br>40–59 → <strong>Keep practising</strong><br>Below 40 → <strong>More practice needed</strong></div>
+<pre>mark = int(input("Enter your mark: "))
+
+if mark &gt;= 80:
+    print("Result: Excellent")
+
+# Complete the program</pre>
+<textarea placeholder="Complete the code..."></textarea>
+<button class="secondary" onclick="toggle('h5')">💡 Hint</button><div class="hint" id="h5">After the first <code>if</code>, use <code>elif mark &gt;= 60:</code>, then another <code>elif</code>, then <code>else</code>.</div>
+<p class="test"><strong>Test:</strong> 95, 80, 72, 60, 45, 39.</p>
+</section>
+
+<section class="card" id="c6"><span class="level">CHALLENGE 6 • MINI PROJECT</span><h2>🚪 Secret Door</h2>
+<p>Combine a <strong>string</strong> and an <strong>integer</strong>. Ask for a character name and secret code. The correct code is <strong>2468</strong>.</p>
+<pre>name = input("Enter your character name: ")
+code = int(input("Enter the secret code: "))
+
+# Add your selection</pre>
+<p>If correct, greet the player by name and print <code>Door unlocked!</code>. Otherwise greet them and print <code>ACCESS DENIED</code>.</p>
+<textarea placeholder="Build your Secret Door program..."></textarea>
+<button class="secondary" onclick="toggle('h6')">💡 Hint</button><div class="hint" id="h6">Use <code>if code == 2468:</code>. To include the player's name, you can use <code>print("Welcome", name)</code>.</div>
+<h3>⭐ Extension</h3>
+<p>Ask the player to choose <code>wizard</code> or <code>knight</code>. Wizard receives a magic wand; knight receives a sword; anything else prints <code>Unknown character!</code>.</p>
+</section>
+
+<section class="card"><span class="level">TEST LIKE A PROGRAMMER</span><h2>🧪 Testing Table</h2>
+<p>For one of your programs, record three tests: one normal value and two values close to a decision boundary.</p>
+<div class="two"><input type="text" placeholder="Test value 1"><input type="text" placeholder="Expected result 1"><input type="text" placeholder="Test value 2"><input type="text" placeholder="Expected result 2"><input type="text" placeholder="Test value 3"><input type="text" placeholder="Expected result 3"></div>
+</section>
+
+<section class="card exit" id="exit"><span class="level">2-MINUTE EXIT TICKET</span><h2>🎟️ Before you leave...</h2>
+<p><strong>1.</strong> Which operator means “equal to” in Python?</p>
+<label><input type="radio" name="q1" value="="> =</label> &nbsp; <label><input type="radio" name="q1" value="=="> ==</label> &nbsp; <label><input type="radio" name="q1" value="!="> !=</label>
+<p><strong>2.</strong> What data type would you use for a student's age?</p>
+<label><input type="radio" name="q2" value="string"> string</label> &nbsp; <label><input type="radio" name="q2" value="integer"> integer</label>
+<p><strong>3.</strong> Complete the missing keyword:</p><pre>if score &gt;= 80:
+    print("Excellent")
+_____ score &gt;= 60:
+    print("Good")
+else:
+    print("Keep practising")</pre>
+<input id="q3" type="text" placeholder="Type the keyword">
+<p><button class="primary" onclick="checkExit()">Check my exit ticket</button></p><div class="feedback" id="result"></div>
+</section>
+</main>
+<div class="footer">Year 8 Python • Selection, Integers & Strings • Keep testing, debugging and improving.</div>
+<script>
+function toggle(id){const e=document.getElementById(id);e.style.display=e.style.display==='block'?'none':'block'}
+function checkExit(){
+ const q1=document.querySelector('input[name="q1"]:checked');
+ const q2=document.querySelector('input[name="q2"]:checked');
+ const q3=document.getElementById('q3').value.trim().toLowerCase();
+ let score=0;if(q1&&q1.value==='==')score++;if(q2&&q2.value==='integer')score++;if(q3==='elif')score++;
+ document.getElementById('result').innerHTML='Score: '+score+'/3 — '+(score===3?'Excellent! You are ready for the next challenge.':score===2?'Good work. Review the question you missed.':'Review ==, integer data and elif, then try again.');
+}
+</script>
+</body></html>
